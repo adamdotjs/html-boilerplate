@@ -1,0 +1,71 @@
+/*
+Use BEM convention for naming classes.
+i.e. 
+block: .body
+element: .body__shirt
+modifier: .body__shirt--blue
+*/
+
+
+:root {
+
+	/*------------- DEFINE COLOR SYSTEM -------------*/
+	--primary: steelblue;
+	--primary-light: lightsteelblue ;
+	--primary-dark: darkslateblue;
+	--secondary: blanchedalmond;
+	--tertiary: cadetblue;
+	--accent: darkkhaki;
+	--warning: palevioletred;
+	--error: crimson;
+	--alert: yellowgreen;
+	--action: chocolate;
+	--neutral: gray;
+	--neutral-light: gainsboro;
+	--neutral-dark: dimgrey;
+	--black: black;
+	--white: white;
+
+
+	/*------------- DEFINE RATIOS FOR SCALING -------------*/
+	// referenced from https://type-scale.com/
+	--minorSecond: 1.067;
+	--majorSecond: 1.125;
+	--minorThird: 1.2;
+	--majorThird: 1.25;
+	--perfectFourth: 1.333;
+	--augmentedFourth: 1.414;
+	--perfectFifth: 1.5;
+	--goldenRatio: 1.618;
+
+	
+	/*------------- DEFINE TYPOGRAPHIC SCALE -------------*/
+	--typeScaleInt: var(--perfectFourth);
+
+	// set media query to reduce scale on mobile devices
+	@media (max-width: 768px) {
+		--typeScaleInt: var(--majorThird);
+	}
+
+	--typeScale0: calc(1.6rem + ((var(--typeScaleInt) - 1) * .25vw));
+	--typeScale000: calc(var(--typeScale00) / var(--typeScaleInt));
+	--typeScale00: calc(var(--typeScale0) / var(--typeScaleInt));
+	--typeScale1: calc(var(--typeScale0) * var(--typeScaleInt));
+	--typeScale2: calc(var(--typeScale1) * var(--typeScaleInt));
+	--typeScale3: calc(var(--typeScale2) * var(--typeScaleInt));
+	--typeScale4: calc(var(--typeScale3) * var(--typeScaleInt));
+	--typeScale5: calc(var(--typeScale4) * var(--typeScaleInt));
+
+
+		/*------------- DEFINE SPACING -------------*/
+
+
+		/*------------- DEFINE CONTENT WIDTHS -------------*/
+		--contentWidthMin: 25rem;
+		--contentWidth: 90vw;
+		--contentWidthMax: 160rem;
+		--paraWidth: 120ch;
+		--headerWidth: 30ch;
+
+
+}

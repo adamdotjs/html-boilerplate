@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+	line-height: calc(2px + 2ex + 2px);
+	max-width: var(--headerWidth);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin-bottom: .65em;
+}
+
+
+h1 {
+	font-size: var(--typeScale5);
+}
+
+h2 {
+	font-size: var(--typeScale4);
+}
+
+h3 {
+	font-size: var(--typeScale3);
+}
+
+h4 {
+	font-size: var(--typeScale2);
+}
+
+h5 {
+	font-size: var(--typeScale1);
+}
+
+p {
+	font-size: var(--typeScale0);
+	max-width: var(--paraWidth);
+}
