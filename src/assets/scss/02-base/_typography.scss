@@ -10,15 +10,9 @@
 	--perfectFifth: 1.5;
 	--goldenRatio: 1.618;
 
-	
 	/*------------- DEFINE TYPOGRAPHIC SCALE -------------*/
 	--fontScaleInt: var(--perfectFourth);
 	--fontScaleBase: 1.6rem;
-
-	// set media query to reduce scale on mobile devices
-	@media (max-width: 768px) {
-		--fontScaleInt: var(--minorThird);
-	}
 
 	--fontScale000: calc(var(--fontScale00) / var(--fontScaleInt));
 	--fontScale00: calc(var(--fontScale0) / var(--fontScaleInt));
@@ -28,6 +22,10 @@
 	--fontScale3: calc(var(--fontScale2) * var(--fontScaleInt));
 	--fontScale4: calc(var(--fontScale3) * var(--fontScaleInt));
 	--fontScale5: calc(var(--fontScale4) * var(--fontScaleInt));
+
+	/*------------- SET UNIVERSAL BOTTOM MARGIN FOR TYPE ELEMENTS -------------*/
+	--typeMarginB: .65em;
+
 
 	/*------------- SET MAX CHARACTER WIDTHS FOR HEADING AND PARAGRAPHS -------------*/
 	--headingWidth: 30ch;
@@ -50,12 +48,11 @@ h3,
 h4,
 h5,
 p {
-	margin-bottom: .65em;
+	margin-bottom: var(--typeMarginB);
 }
 
-
 h1 {
-	font-size: var(--fontScale5);
+font-size: var(--fontScale5);
 }
 
 h2 {
@@ -75,6 +72,5 @@ h5 {
 }
 
 p {
-	font-size: var(--fontScale0);
 	max-width: var(--paragraphWidth);
 }
