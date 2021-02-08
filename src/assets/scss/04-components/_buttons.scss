@@ -1,0 +1,15 @@
+:root {
+		/*------------- GLOBAL BUTTON STYLING -------------*/
+		--btnPadding: .65em;
+		--btnRadius: .65em;
+		--btnBorder: none;
+}
+
+button,
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	border-radius: var(--btnRadius);
+	border: var(--btnBorder);
+	padding: var(--btnPadding) calc(var(--btnPadding) * 2);
+}
