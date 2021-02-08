@@ -1,5 +1,5 @@
-/*------------- DEFINE CONTENT WIDTHS -------------*/
 :root {
+	/*------------- DEFINE CONTENT WIDTHS -------------*/
 	--contentWidthMin: 25rem;
 	--contentWidth: 90vw;
 	--contentWidthMax: 160rem;
@@ -16,5 +16,15 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: sans-serif;
+}
+
+section {
+	width: 100%;
+}
+
+.container {
+	width: var(--contentWidth);
+	max-width: var(--contentWidthMax);
+	margin: 0 auto;
 }
 
