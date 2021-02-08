@@ -1,13 +1,8 @@
 .auto-grid {
 	--minColWidth: 25rem;
-	--gridGap: 2vw;
+	--gridGap: 3vw;
 
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(var(--minColWidth), 1fr));
 	gap: var(--gridGap);
-	width: var(--contentWidth);
-	max-width: var(--contentWidthMax);
-	padding: calc(var(--gridGap) * 1.618);
-
-	margin: 0 auto;
 }
