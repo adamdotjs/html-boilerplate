@@ -1,3 +1,3 @@
 # html-boilerplate
 
-Hi, I'm Adam.
+HTML boilerplate with modern CSS "best practices" (pulled from various sources)
