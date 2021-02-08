@@ -1,4 +1,8 @@
 :root {
+	/*------------- DEFINE FONT FAMILIES -------------*/
+	--fontHeading: sans-serif;
+	--fontPrimary: sans-serif;
+
 	/*------------- DEFINE RATIOS FOR SCALING -------------*/
 	// referenced from https://font-scale.com/
 	--minorSecond: 1.067;
@@ -32,6 +36,10 @@
 	--paragraphWidth: 120ch;
 }
 
+body {
+	font-family: var(--fontPrimary);
+	font-size: var(--fontScale0);
+}
 
 h1,
 h2,
@@ -40,6 +48,7 @@ h4,
 h5 {
 	line-height: calc(2px + 2ex + 2px);
 	max-width: var(--headingWidth);
+	font-family: var(--fontHeading);
 }
 
 h1,

@@ -8,10 +8,11 @@
 }
 
 
-input,
+input:not([type=radio]),
 select,
-textarea {
-	padding: calc(var(--inputPadding) / 2);
+textarea,
+.toggle label {
+	padding: var(--inputRadius);
 	border-radius: var(--inputRadius);
 	border: var(--inputBorder);
 	box-shadow: var(--shadowSmallY);
@@ -19,3 +20,23 @@ textarea {
 	margin-bottom: var(--inputMargin);
 }
 
+.toggle {
+	cursor: pointer;
+	display: block;
+	line-height: 1;
+	
+	& input{
+		position: absolute;
+		opacity: 0;
+	}
+	
+	& label {
+		text-align: center;
+	}
+	
+	& input:checked + label {
+		background: blue;
+		color: var(--white);
+		font-weight: bold;
+	}
+}
