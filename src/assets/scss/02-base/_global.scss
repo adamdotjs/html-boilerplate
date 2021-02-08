@@ -3,6 +3,7 @@
 	--contentWidthMin: 25rem;
 	--contentWidth: 90vw;
 	--contentWidthMax: 160rem;
+	--containerPadding: 10rem 1vw;
 }
 
 
@@ -27,5 +28,6 @@ section {
 	width: var(--contentWidth);
 	max-width: var(--contentWidthMax);
 	margin: 0 auto;
+	padding: var(--containerPadding);
 }
 

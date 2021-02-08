@@ -3,13 +3,55 @@
 		--btnPadding: .65em;
 		--btnRadius: .65em;
 		--btnBorder: none;
+		--btnFontSize: inherit;
+		--btnLetterSpacing: 0;
+		--btnTextTransform: none;
+		--btnFontWeight: normal;
 }
 
 button,
 .btn {
 	display: inline-block;
 	cursor: pointer;
+	font-size: var(--btnFontSize);
 	border-radius: var(--btnRadius);
 	border: var(--btnBorder);
 	padding: var(--btnPadding) calc(var(--btnPadding) * 2);
+	box-shadow: var(--shadowBigXY);
+	letter-spacing: var(--btnLetterSpacing);
+	text-transform: var(--btnTextTransform);
+	font-weight: var(--btnFontWeight);
+	transition: all 100ms ease-in;
+}
+
+.btn-sm {
+	--btnFontSize: var(--fontScale00);
+}
+
+.btn-lg {
+	--btnFontSize: var(--fontScale1);
+}
+
+.btn-primary {
+	background: var(--primary);
+}
+
+.btn-secondary {
+	background: var(--secondary);
+}
+
+.btn-accent {
+	background: var(--accent);
+}
+
+.btn-alert {
+	background: var(--alert);
+}
+
+.btn-action {
+	background: var(--action);
+}
+
+.btn-white {
+	background: var(--white);
 }

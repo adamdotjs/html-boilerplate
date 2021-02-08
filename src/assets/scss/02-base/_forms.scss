@@ -1,15 +1,21 @@
 :root {
 	/*------------- GLOBAL FORM STYLING -------------*/
 	--inputPadding: .65em;
-	--inputRadius: 0;
-	--inputBorder: 1px solid;
+	--inputRadius: .65em;
+	--inputMargin: .6em;
+	--inputBorder: 1px solid var(--neutral);
+	--inputColor: var(--neutral-dark);
 }
 
 
 input,
-select {
+select,
+textarea {
 	padding: calc(var(--inputPadding) / 2);
 	border-radius: var(--inputRadius);
 	border: var(--inputBorder);
-	line-height: 1;
+	box-shadow: var(--shadowSmallY);
+	color: var(--inputColor);
+	margin-bottom: var(--inputMargin);
 }
+
