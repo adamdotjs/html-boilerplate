@@ -1,21 +1,29 @@
-:root {
-	/*------------- GLOBAL FORM STYLING -------------*/
-	--inputPadding: .65em;
-	--inputRadius: .65em;
-	--inputMargin: .6em;
-	--inputBorder: 1px solid var(--neutral);
-	--inputColor: var(--neutral-dark);
-}
-
-
-input,
+input:not([type=radio]),
 select,
-textarea {
-	padding: calc(var(--inputPadding) / 2);
-	border-radius: var(--inputRadius);
-	border: var(--inputBorder);
-	box-shadow: var(--shadowSmallY);
-	color: var(--inputColor);
-	margin-bottom: var(--inputMargin);
+textarea,
+.toggle label {
+	padding: .5em 1em;
+	border: 1px solid;
+	outline: none;
 }
 
+.toggle {
+	cursor: pointer;
+	display: block;
+	line-height: 1;
+	
+	& input{
+		position: absolute;
+		opacity: 0;
+	}
+	
+	& label {
+		text-align: center;
+	}
+	
+	& input:checked + label {
+		background: var(--primary);
+		color: var(--white);
+		box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+	}
+}
