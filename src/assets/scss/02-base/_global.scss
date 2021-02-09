@@ -1,14 +1,9 @@
+/* -----------------------------------------------
+	GLOBAL ELEMENTS
+----------------------------------------------- */
+
 html {
 	font-size: 62.5%; //set base to 10px for easier REM sizing
-	
-	@media (max-width: 768px) {
-		font-size: 50%;
-	}
-
-	@media (min-width: 1600px) {
-		font-size: 75%;
-	}
-
 	word-break: break-word;
 	hyphens: auto;
 }
@@ -20,15 +15,15 @@ body {
 
 section {
 	width: 100%;
-	position: relative;
 }
 
 .wrapper {
-	width: 90vw;
-	max-width: 1600px;
+	width: 80vw;
+	width: clamp(20rem, 80vw, 160rem);
 	padding: 1vw;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 .icon {

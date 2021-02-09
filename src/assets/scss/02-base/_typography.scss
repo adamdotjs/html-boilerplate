@@ -1,17 +1,19 @@
+/* -----------------------------------------------
+		TYPOGRAPHY RULES
+		Reference modular-scale.scss for variable sizing
+----------------------------------------------- */
+
+
+/*------------- global font variables -------------*/
 :root {
-	/*------------- DEFINE FONT FAMILIES -------------*/
+	// default font families
 	--fontHeading: sans-serif;
 	--fontPrimary: sans-serif;
-
-	/*------------- SET UNIVERSAL BOTTOM MARGIN FOR TYPE ELEMENTS -------------*/
-	--typeMarginB: .65em;
-
-
-	/*------------- SET MAX CHARACTER WIDTHS FOR HEADING AND PARAGRAPHS -------------*/
-	--headingWidth: 30ch;
-	--paragraphWidth: 120ch;
+	
+	// set max character widths for readability
+	--headingMeasure: 30ch;
+	--paragraphMeasure: 120ch;
 }
-
 
 
 
@@ -26,7 +28,7 @@ h3,
 h4,
 h5 {
 	line-height: calc(2px + 2ex + 2px);
-	max-width: var(--headingWidth);
+	max-width: var(--headingMeasure);
 	font-family: var(--fontHeading);
 }
 
@@ -36,7 +38,7 @@ h3,
 h4,
 h5,
 p {
-	margin-bottom: var(--typeMarginB);
+	margin-bottom: .65em;
 }
 
 h1 {

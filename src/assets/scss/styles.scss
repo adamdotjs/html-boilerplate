@@ -6,3 +6,12 @@
 @import '03-layout/__layout-index';
 @import '04-components/__components-index';
 @import '05-pages/__pages-index';
+
+
+/* 
+Use BEM naming convention wherever possible, but don't go overboard!
+Don't make several extra BEM objects just to add simple CSS properties,
+That's what utilities.scss is for! Keep the CSS as global as possible to minimize bloat.
+
+Separate BEM and utility classes in the markup by using a | separator - CSS won't recognize it!
+*/
