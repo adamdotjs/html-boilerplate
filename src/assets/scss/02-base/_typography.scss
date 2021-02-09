@@ -3,30 +3,6 @@
 	--fontHeading: sans-serif;
 	--fontPrimary: sans-serif;
 
-	/*------------- DEFINE RATIOS FOR SCALING -------------*/
-	// referenced from https://font-scale.com/
-	--minorSecond: 1.067;
-	--majorSecond: 1.125;
-	--minorThird: 1.2;
-	--majorThird: 1.25;
-	--perfectFourth: 1.333;
-	--augmentedFourth: 1.414;
-	--perfectFifth: 1.5;
-	--goldenRatio: 1.618;
-
-	/*------------- DEFINE TYPOGRAPHIC SCALE -------------*/
-	--fontScaleInt: var(--perfectFourth);
-	--fontScaleBase: 1.6rem;
-
-	--fontScale000: calc(var(--fontScale00) / var(--fontScaleInt));
-	--fontScale00: calc(var(--fontScale0) / var(--fontScaleInt));
-	--fontScale0: var(--fontScaleBase);
-	--fontScale1: calc(var(--fontScale0) * var(--fontScaleInt));
-	--fontScale2: calc(var(--fontScale1) * var(--fontScaleInt));
-	--fontScale3: calc(var(--fontScale2) * var(--fontScaleInt));
-	--fontScale4: calc(var(--fontScale3) * var(--fontScaleInt));
-	--fontScale5: calc(var(--fontScale4) * var(--fontScaleInt));
-
 	/*------------- SET UNIVERSAL BOTTOM MARGIN FOR TYPE ELEMENTS -------------*/
 	--typeMarginB: .65em;
 
@@ -36,9 +12,12 @@
 	--paragraphWidth: 120ch;
 }
 
+
+
+
 body {
 	font-family: var(--fontPrimary);
-	font-size: var(--fontScale0);
+	font-size: var(--scale0);
 }
 
 h1,
@@ -61,23 +40,23 @@ p {
 }
 
 h1 {
-font-size: var(--fontScale5);
+font-size: var(--scale5);
 }
 
 h2 {
-	font-size: var(--fontScale4);
+	font-size: var(--scale4);
 }
 
 h3 {
-	font-size: var(--fontScale3);
+	font-size: var(--scale3);
 }
 
 h4 {
-	font-size: var(--fontScale2);
+	font-size: var(--scale2);
 }
 
 h5 {
-	font-size: var(--fontScale1);
+	font-size: var(--scale1);
 }
 
 p {

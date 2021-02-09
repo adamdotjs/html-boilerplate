@@ -1,26 +1,10 @@
-:root {
-		/*------------- GLOBAL BUTTON STYLING -------------*/
-		--btnPadding: .65em;
-		--btnRadius: .65em;
-		--btnBorder: none;
-		--btnFontSize: inherit;
-		--btnLetterSpacing: 0;
-		--btnTextTransform: none;
-		--btnFontWeight: normal;
-}
-
 button,
 .btn {
 	display: inline-block;
 	cursor: pointer;
-	font-size: var(--btnFontSize);
-	border-radius: var(--btnRadius);
-	border: var(--btnBorder);
-	padding: var(--btnPadding) calc(var(--btnPadding) * 2);
-	box-shadow: var(--shadowBigXY);
-	letter-spacing: var(--btnLetterSpacing);
-	text-transform: var(--btnTextTransform);
-	font-weight: var(--btnFontWeight);
+	border-radius: .5em;
+	border: none;
+	padding: .5em 1em;
 	transition: all 100ms ease-in;
 }
 

@@ -1,23 +1,10 @@
-:root {
-	/*------------- GLOBAL FORM STYLING -------------*/
-	--inputPadding: .65em;
-	--inputRadius: .65em;
-	--inputMargin: .6em;
-	--inputBorder: 1px solid var(--neutral);
-	--inputColor: var(--neutral-dark);
-}
-
-
 input:not([type=radio]),
 select,
 textarea,
 .toggle label {
-	padding: var(--inputRadius);
-	border-radius: var(--inputRadius);
-	border: var(--inputBorder);
-	box-shadow: var(--shadowSmallY);
-	color: var(--inputColor);
-	margin-bottom: var(--inputMargin);
+	padding: .5em 1em;
+	border: 1px solid;
+	outline: none;
 }
 
 .toggle {
@@ -35,8 +22,8 @@ textarea,
 	}
 	
 	& input:checked + label {
-		background: blue;
+		background: var(--primary);
 		color: var(--white);
-		font-weight: bold;
+		box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4);
 	}
 }
