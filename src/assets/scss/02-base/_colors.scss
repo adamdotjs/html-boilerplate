@@ -1,5 +1,9 @@
+/* -----------------------------------------------
+	BRANDING COLORS AND UNIVERSAL VISUAL STYLES
+----------------------------------------------- */
+
 :root {
-	/*------------- DEFINE BASE COLOR SYSTEM -------------*/
+	/*------------- base color system -------------*/
 	--primary: steelblue;
 	--primary-light: lightsteelblue ;
 	--primary-dark: darkslateblue;
@@ -16,7 +20,7 @@
 	--black: black;
 	--white: white;
 
-	/*------------- BOX SHADOWS -------------*/
+	/*------------- universal box shadows -------------*/
 	--shadowColorLight: var(--white);
 	--shadowColorDark: rgba(0,0,0,0.3);
 
