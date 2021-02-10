@@ -20,16 +20,40 @@
   left: 0;
 }
 
-.aspect-wide {
+.u-aspect-wide {
   padding-top: 56.25%; //16:9 aspect ratio
 }
 
-.aspect-square {
+.u-aspect-square {
   padding-top: 100%; //1:1 aspect ratio
 }
 
-.centered {
+
+// flow utility to add margins between sibling elements. Add class to parent markup to activate.
+.u-flow {
+  --flow-space: var(--space0);
+}  
+
+.u-flow > * + * { 
+  margin-top: var(--flow-space);
+}
+
+// affix to parent element to center content in X and Y axis
+.u-centered {
   display: grid;
   place-items: center;
   text-align: center;
+}
+
+// Text alignment
+.u-align-left {
+  text-align: left;
+}
+
+.u-align-center {
+  text-align: center;
+}
+
+.u-align-right {
+  text-align: right;
 }

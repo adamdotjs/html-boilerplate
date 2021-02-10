@@ -17,16 +17,11 @@ section {
 	width: 100%;
 }
 
-.wrapper {
-	width: 80vw;
-	width: clamp(20rem, 80vw, 160rem);
+.b-wrapper {
+	width: 90vw;
+	width: clamp(20rem, 90vw, 160rem);
 	padding: 1vw;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-}
-
-.icon {
-	width: 1em;
-	height: 1em;
 }
