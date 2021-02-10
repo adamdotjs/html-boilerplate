@@ -25,42 +25,44 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
 	line-height: calc(2px + 2ex + 2px);
 	max-width: var(--headingMeasure);
 	font-family: var(--fontHeading);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-	margin-bottom: .65em;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// p {
+// 	margin-bottom: .65em;
+// }
 
 h1 {
-font-size: var(--scale5);
+font-size: var(--scale4);
 }
 
 h2 {
-	font-size: var(--scale4);
-}
-
-h3 {
 	font-size: var(--scale3);
 }
 
-h4 {
+h3 {
 	font-size: var(--scale2);
 }
 
-h5 {
+h4 {
 	font-size: var(--scale1);
 }
 
-p {
+h5 {
+	font-size: var(--scale0);
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+p,
+h5 {
 	max-width: var(--paragraphWidth);
 }
