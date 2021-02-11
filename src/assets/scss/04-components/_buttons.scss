@@ -1,19 +1,20 @@
 button,
 .btn {
 	display: inline-block;
-	cursor: pointer;
-	border-radius: .5em;
+	border-radius: var(--flow-2);
 	border: none;
-	padding: .5em 1em;
+	padding: calc(var(--flow1) / 2) var(--flow1);
 	transition: all 100ms ease-in;
+	text-decoration: none;
+	color: inherit;
 }
 
 .btn-sm {
-	--btnFontSize: var(--fontScale00);
+	--btnFontSize: var(--font-scale-00);
 }
 
 .btn-lg {
-	--btnFontSize: var(--fontScale1);
+	--btnFontSize: var(--font-scale-1);
 }
 
 .btn-primary {

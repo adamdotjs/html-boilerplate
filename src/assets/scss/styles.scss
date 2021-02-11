@@ -1,17 +1,18 @@
 /*! THIS FILE CREATED WITH SCSS -- DO NOT EDIT DIRECTLY! */
 
-@import '00-vendor/__vendor-index';
-@import '01-helpers/__helpers-index';
-@import '02-base/__base-index';
-@import '03-layout/__layout-index';
+@import '00-config/__config-index';
+@import '01-base/__base-index';
+@import '02-utilities/__utilities-index';
+@import '03-layouts/__layouts-index';
 @import '04-components/__components-index';
 @import '05-pages/__pages-index';
+@import '06-vendor/__vendor-index';
 
 
 /* 
 Use BEM naming convention wherever possible, but don't go overboard!
 Don't make several extra BEM objects just to add simple CSS properties,
-That's what utilities.scss is for! Keep the CSS as global as possible to minimize bloat.
+That's what utilities are for! Keep the CSS as global as possible to minimize bloat.
 
 Separate BEM and utility classes in the markup by using a | separator - CSS won't recognize it!
 */
