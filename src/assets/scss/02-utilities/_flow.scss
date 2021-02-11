@@ -5,12 +5,49 @@
 ----------------------------------------------- 
 */
 
-
-// flow utility to add margins between sibling elements without requiring :first-child. 
+// flow utility to add margins between sibling elements without requiring :first-child.
 .u-flow {
-  --flow-space: var(--flow0);
-}  
+	--flow-space: var(--flow0);
+}
 
-.u-flow > * + * { 
-  margin-top: var(--flow-space);
+.u-flow > * + * {
+	margin-top: var(--flow-space);
+}
+
+/* utility classes to add to markup on a per item basis to escape the default amount */
+.u-flow-none {
+	--flow-space: 0;
+}
+.u-flow-5 {
+	--flow-space: var(--flow-5);
+}
+.u-flow-4 {
+	--flow-space: var(--flow-4);
+}
+.u-flow-3 {
+	--flow-space: var(--flow-3);
+}
+.u-flow-2 {
+	--flow-space: var(--flow-2);
+}
+.u-flow-1 {
+	--flow-space: var(--flow-1);
+}
+.u-flow0 {
+	--flow-space: var(--flow-0);
+}
+.u-flow1 {
+	--flow-space: var(--flow1);
+}
+.u-flow2 {
+	--flow-space: var(--flow2);
+}
+.u-flow3 {
+	--flow-space: var(--flow3);
+}
+.u-flow4 {
+	--flow-space: var(--flow4);
+}
+.u-flow5 {
+	--flow-space: var(--flow5);
 }

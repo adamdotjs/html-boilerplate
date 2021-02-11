@@ -4,3 +4,81 @@
 **  These are meant to do one thing to avoid adding unnecessary BEM classes
 ----------------------------------------------- 
 */
+
+
+// background colors
+.u-bg-primary {
+	background: var(--primary);
+}
+.u-bg-secondary {
+	background: var(--secondary);
+}
+.u-bg-accent {
+	background: var(--accent);
+}
+.u-bg-warning {
+	background: var(--warning);
+}
+.u-bg-error {
+	background: var(--error);
+}
+.u-bg-alert {
+	background: var(--alert);
+}
+.u-bg-action {
+	background: var(--action);
+}
+.u-bg-neutral {
+	background: var(--neutral);
+}
+.u-bg-neutral-light {
+	background: var(--neutral-light);
+}
+.u-bg-neutral-dark {
+	background: var(--neutral-dark);
+}
+.u-bg-black {
+	background: var(--black);
+}
+.u-bg-white {
+	background: var(--white);
+}
+
+
+// text colors
+.u-color-primary {
+	color: var(--primary);
+}
+.u-color-secondary {
+	color: var(--secondary);
+}
+.u-color-accent {
+	color: var(--accent);
+}
+.u-color-warning {
+	color: var(--warning);
+}
+.u-color-error {
+	color: var(--error);
+}
+.u-color-alert {
+	color: var(--alert);
+}
+.u-color-action {
+	color: var(--action);
+}
+.u-color-neutral {
+	color: var(--neutral);
+}
+.u-color-neutral-light {
+	color: var(--neutral-light);
+}
+.u-color-neutral-dark {
+	color: var(--neutral-dark);
+}
+.u-color-black {
+	color: var(--black);
+}
+.u-color-white {
+	color: var(--white);
+}
