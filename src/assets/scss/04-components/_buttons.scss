@@ -7,14 +7,32 @@ button,
 	transition: all 100ms ease-in;
 	text-decoration: none;
 	color: inherit;
+	cursor: pointer;
+	transition: all 200ms ease-in-out, transform 100ms ease;
+	outline: none;
+	will-change: transform;
+
+	&:focus {
+		box-shadow: inset 0px 0px 0px 4px var(--primary-dark);
+	}
+
+	&:hover {
+		transform: translateY(-.1em);
+		background: var(--primary);
+		color: var(--white);
+	}
+
+	&:active {
+		transform: scale(0.95);
+	}
 }
 
 .btn-sm {
-	--btnFontSize: var(--font-scale-00);
+	font-size: var(--scale-1);
 }
 
 .btn-lg {
-	--btnFontSize: var(--font-scale-1);
+	font-size: var(--scale1);
 }
 
 .btn-primary {
