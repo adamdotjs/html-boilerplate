@@ -1,0 +1,38 @@
+/* 
+-----------------------------------------------
+**	BRANDING COLORS AND UNIVERSAL VISUAL STYLES
+----------------------------------------------- 
+*/
+
+:root {
+	/*------------- base color system -------------*/
+	--primary: steelblue;
+	--primary-light: lightsteelblue ;
+	--primary-dark: darkslateblue;
+	--secondary: blanchedalmond;
+	--tertiary: cadetblue;
+	--accent: darkkhaki;
+	--warning: palevioletred;
+	--error: crimson;
+	--alert: yellowgreen;
+	--action: chocolate;
+	--neutral: gray;
+	--neutral-light: gainsboro;
+	--neutral-dark: dimgrey;
+	--black: black;
+	--white: white;
+
+	/*------------- universal box shadows -------------*/
+	--shadow-color-light: var(--white);
+	--shadow-color-dark: rgba(0,0,0,0.3);
+
+	--shadow-small-y: 0px 2px 8px var(--shadow-color-dark);
+	--shadow-med-y: 0px 6px 12px var(--shadow-color-dark);
+	--shadow-big-y: 0px 12px 24px var(--shadow-color-dark);
+	--shadow-small-xy: 2px 2px 8px var(--shadow-color-dark);
+	--shadow-med-xy: 6px 6px 12px var(--shadow-color-dark);
+	--shadow-big-xy: 6px 12px 24px var(--shadow-color-dark);
+	--shadow-huge: -20px -20px 60px var(--shadow-color-light),
+												20px 20px 60px var(--shadow-color-dark);
+
+}

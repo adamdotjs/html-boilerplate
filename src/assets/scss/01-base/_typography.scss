@@ -1,0 +1,61 @@
+/* 
+-----------------------------------------------
+**	TYPOGRAPHY RULES
+**	Reference config/scale.scss for type scale
+----------------------------------------------- 
+*/
+
+
+/*------------- global font variables -------------*/
+:root {
+	// default font families
+	--font-heading: sans-serif;
+	--font-primary: sans-serif;
+	
+	// set max character widths for readability
+	--heading-measure: 30ch;
+	--paragraph-measure: 120ch;
+}
+
+
+
+body {
+	font-family: var(--font-primary);
+	font-size: var(--scale0);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: calc(2px + 2ex + 2px);
+	max-width: var(--heading-measure);
+	font-family: var(--font-heading);
+}
+
+h1 {
+	font-size: var(--scale4);
+}
+
+h2 {
+	font-size: var(--scale3);
+}
+
+h3 {
+	font-size: var(--scale2);
+}
+
+h4 {
+	font-size: var(--scale1);
+}
+
+h5 {
+	font-size: var(--scale0);
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+p,
+h5 {
+	max-width: var(--paragraph-measure);
+}

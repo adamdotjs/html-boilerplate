@@ -1,0 +1,23 @@
+/* 
+-----------------------------------------------
+**	A RESPONSIVE EM UNIT SCALE BASED ON CONFIG SETTINGS IN SCALE.SCSS
+**	To use wherever EM units are preferred -- corner radius, margin & padding, etc.
+----------------------------------------------- 
+*/
+
+:root {
+	--flow-base: 1em; // default font size
+	--flow-scale: var(--scale-ratio);
+
+	--flow-5: calc(var(--flow-4) / var(--flow-scale));
+	--flow-4: calc(var(--flow-3) / var(--flow-scale));
+	--flow-3: calc(var(--flow-2) / var(--flow-scale));
+	--flow-2: calc(var(--flow-1) / var(--flow-scale));
+	--flow-1: calc(var(--flow0) / var(--flow-scale));
+	--flow0: var(--flow-base);
+	--flow1: calc(var(--flow0) * var(--flow-scale));
+	--flow2: calc(var(--flow1) * var(--flow-scale));
+	--flow3: calc(var(--flow2) * var(--flow-scale));
+	--flow4: calc(var(--flow3) * var(--flow-scale));
+	--flow5: calc(var(--flow4) * var(--flow-scale));
+}

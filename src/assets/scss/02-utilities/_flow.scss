@@ -1,0 +1,16 @@
+/* 
+-----------------------------------------------
+**  GLOBAL UTILITY CLASSES -- ADD TO MARKUP
+**  These are meant to do one thing to avoid adding unnecessary BEM classes
+----------------------------------------------- 
+*/
+
+
+// flow utility to add margins between sibling elements without requiring :first-child. 
+.u-flow {
+  --flow-space: var(--flow0);
+}  
+
+.u-flow > * + * { 
+  margin-top: var(--flow-space);
+}

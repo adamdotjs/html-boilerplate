@@ -1,0 +1,15 @@
+/* 
+-----------------------------------------------
+**  GLOBAL UTILITY CLASSES -- ADD TO MARKUP
+**  These are meant to do one thing to avoid adding unnecessary BEM classes
+----------------------------------------------- 
+*/
+
+.u-wrapper {
+	width: 90vw;
+	width: clamp(20rem, 90vw, 160rem);
+	padding: 1vw;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
