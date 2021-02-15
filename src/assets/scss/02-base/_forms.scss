@@ -1,6 +1,6 @@
 /* 
 -----------------------------------------------
-**	FORM CONFIG FOR BETTER USABILITY
+**	FORM STYLING AND CUSTOM ELEMENTS
 ----------------------------------------------- 
 */
 
@@ -8,7 +8,7 @@ input:not([type=radio]),
 select,
 textarea,
 .toggle label {
-	padding: calc(var(--flow0) / 2) var(--flow0);
+	padding: var(--flow-4) var(--flow-2);
 	border: 1px solid;
 }
 
@@ -16,9 +16,8 @@ textarea,
 .toggle input:disabled ~ label {
 	background: var(--neutral-light) !important;
 	color: var(--white) !important;
-	pointer-events: none !important;
+	cursor: not-allowed !important;
 }
-
 
 /*------------- radio buttons styled as toggles -------------*/
 .toggle {

@@ -1,0 +1,16 @@
+/* Use this to horizontally nest various width elements with gap when wrapping.
+   Change once gap support is better. */
+.o-cluster {
+	--cluster-gap: var(--flow-2);
+}
+
+.o-cluster > * {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: calc(var(--cluster-gap) / 2 * -1);
+}
+
+.o-cluster > * > * {
+	margin: calc(var(--cluster-gap) / 2);
+}

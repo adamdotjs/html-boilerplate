@@ -21,12 +21,22 @@
 	--scale-ratio: var(--perfect-fourth); // base scale ratio
 	--scale-base: 1.6rem; // default font size
 
+	@media (min-width: 1600px) {
+		--scale-base: 1.8rem;
+	}
+	
+	@media (max-width: 800px) {
+		--scale-base: 1.4rem;
+		--scale-ratio: var(--major-third);
+	}
+
+
 	--scale-5: calc(var(--scale-4) / var(--scale-ratio));
 	--scale-4: calc(var(--scale-3) / var(--scale-ratio));
 	--scale-3: calc(var(--scale-2) / var(--scale-ratio));
 	--scale-2: calc(var(--scale-1) / var(--scale-ratio));
 	--scale-1: calc(var(--scale0) / var(--scale-ratio));
-	--scale0: calc(var(--scale-base) + .15vw);
+	--scale0: var(--scale-base);
 	--scale1: calc(var(--scale0) * var(--scale-ratio));
 	--scale2: calc(var(--scale1) * var(--scale-ratio));
 	--scale3: calc(var(--scale2) * var(--scale-ratio));

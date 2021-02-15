@@ -1,5 +1,4 @@
-button,
-.btn {
+.c-btn {
 	display: inline-block;
 	border-radius: var(--flow-2);
 	border: none;
@@ -25,36 +24,36 @@ button,
 	&:active {
 		transform: scale(0.95);
 	}
-}
 
-.btn-sm {
+	&--sm {
 	font-size: var(--scale-1);
-}
+	}
 
-.btn-lg {
-	font-size: var(--scale1);
-}
+	&--lg {
+		font-size: var(--scale1);
+	}
 
-.btn-primary {
-	background: var(--primary);
-}
+	&--primary {
+		background: var(--primary);
+	}
 
-.btn-secondary {
-	background: var(--secondary);
-}
+	&--secondary {
+		background: var(--secondary);
+	}
 
-.btn-accent {
-	background: var(--accent);
-}
+	&--accent {
+		background: var(--accent);
+	}
 
-.btn-alert {
-	background: var(--alert);
-}
+	&--alert {
+		background: var(--alert);
+	}
 
-.btn-action {
-	background: var(--action);
-}
+	&--action {
+		background: var(--action);
+	}
 
-.btn-white {
-	background: var(--white);
+	&--white {
+		background: var(--white);
+	}
 }
