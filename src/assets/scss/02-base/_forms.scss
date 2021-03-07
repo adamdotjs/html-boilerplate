@@ -4,11 +4,11 @@
 ----------------------------------------------- 
 */
 
-input:not([type=radio]),
+input:not([type='radio']),
 select,
 textarea,
 .toggle label {
-	padding: var(--flow-4) var(--flow-2);
+	padding: var(--flow-050) var(--flow-200);
 	border: 1px solid;
 }
 
@@ -23,16 +23,16 @@ textarea,
 .toggle {
 	display: block;
 	line-height: 1;
-	
-	& input{
+
+	& input {
 		position: absolute;
 		opacity: 0;
 	}
-	
+
 	& label {
 		text-align: center;
 	}
-	
+
 	& input:checked + label {
 		background: var(--primary);
 		color: var(--white);

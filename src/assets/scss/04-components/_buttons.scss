@@ -1,14 +1,17 @@
 .c-btn {
-	display: inline-block;
-	border-radius: var(--flow-2);
-	border: none;
-	padding: calc(var(--flow1) / 2) var(--flow1);
-	transition: all 100ms ease-in;
-	text-decoration: none;
-	color: inherit;
+	--background: var(--tertiary);
+	--text: var(--white);
+
 	cursor: pointer;
-	transition: all 200ms ease-in-out, transform 100ms ease;
+	display: inline-block;
+	border: none;
+	border-radius: var(--flow-200);
 	outline: none;
+	padding: calc(var(--flow-500) / 2) var(--flow-500);
+	background: var(--background);
+	color: var(--text);
+	text-decoration: none;
+	transition: all 200ms ease-in-out, transform 100ms ease;
 	will-change: transform;
 
 	&:focus {
@@ -16,9 +19,8 @@
 	}
 
 	&:hover {
-		transform: translateY(-.1em);
-		background: var(--primary);
-		color: var(--white);
+		--background: var(--tertiary-dark);
+		transform: translateY(-0.1em);
 	}
 
 	&:active {
@@ -26,34 +28,15 @@
 	}
 
 	&--sm {
-	font-size: var(--scale-1);
+		font-size: var(--scale-1);
 	}
 
 	&--lg {
 		font-size: var(--scale1);
 	}
 
-	&--primary {
-		background: var(--primary);
-	}
-
-	&--secondary {
-		background: var(--secondary);
-	}
-
-	&--accent {
-		background: var(--accent);
-	}
-
-	&--alert {
-		background: var(--alert);
-	}
-
-	&--action {
-		background: var(--action);
-	}
-
 	&--white {
-		background: var(--white);
+		--background: var(--white);
+		--text: var(--tertiary-dark);
 	}
 }

@@ -16,30 +16,19 @@
 	--perfect-fifth: 1.5;
 	--golden-ratio: 1.618;
 
-
 	/*------------- define scale -------------*/
 	--scale-ratio: var(--perfect-fourth); // base scale ratio
-	--scale-base: 1.6rem; // default font size
+	--scale-base: 1.6rem; // default font sizex
 
-	@media (min-width: 1600px) {
-		--scale-base: 1.8rem;
-	}
-	
-	@media (max-width: 800px) {
-		--scale-base: 1.4rem;
-		--scale-ratio: var(--major-third);
-	}
-
-
-	--scale-5: calc(var(--scale-4) / var(--scale-ratio));
-	--scale-4: calc(var(--scale-3) / var(--scale-ratio));
-	--scale-3: calc(var(--scale-2) / var(--scale-ratio));
-	--scale-2: calc(var(--scale-1) / var(--scale-ratio));
-	--scale-1: calc(var(--scale0) / var(--scale-ratio));
-	--scale0: var(--scale-base);
-	--scale1: calc(var(--scale0) * var(--scale-ratio));
-	--scale2: calc(var(--scale1) * var(--scale-ratio));
-	--scale3: calc(var(--scale2) * var(--scale-ratio));
-	--scale4: calc(var(--scale3) * var(--scale-ratio));
-	--scale5: calc(var(--scale4) * var(--scale-ratio));
+	--size-000: calc(var(--size-050) / var(--scale-ratio));
+	--size-050: calc(var(--size-100) / var(--scale-ratio));
+	--size-100: calc(var(--size-200) / var(--scale-ratio));
+	--size-200: calc(var(--size-300) / var(--scale-ratio));
+	--size-300: calc(var(--size-400) / var(--scale-ratio));
+	--size-400: calc(var(--size-base) + 0.2vw);
+	--size-500: calc(var(--size-400) * var(--scale-ratio));
+	--size-600: calc(var(--size-500) * var(--scale-ratio));
+	--size-700: calc(var(--size-600) * var(--scale-ratio));
+	--size-800: calc(var(--size-700) * var(--scale-ratio));
+	--size-900: calc(var(--size-800) * var(--scale-ratio));
 }

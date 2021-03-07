@@ -7,7 +7,7 @@
 
 // flow utility to add margins between sibling elements without requiring :first-child.
 .u-flow {
-	--flow-space: var(--flow0);
+	--flow-space: var(--flow-400);
 }
 
 .u-flow > * + * {
@@ -19,46 +19,46 @@
 	--flow-space: 0;
 }
 
-.u-flow-space-5 {
-	--flow-space: var(--flow-5);
+.u-flow-space-000 {
+	--flow-space: var(--flow-000);
 }
 
-.u-flow-space-4 {
-	--flow-space: var(--flow-4);
+.u-flow-space-050 {
+	--flow-space: var(--flow-050);
 }
 
-.u-flow-space-3 {
-	--flow-space: var(--flow-3);
+.u-flow-space-100 {
+	--flow-space: var(--flow-100);
 }
 
-.u-flow-space-2 {
-	--flow-space: var(--flow-2);
+.u-flow-space-200 {
+	--flow-space: var(--flow-200);
 }
 
-.u-flow-space-1 {
-	--flow-space: var(--flow-1);
+.u-flow-space-300 {
+	--flow-space: var(--flow-200);
 }
 
-.u-flow-space0 {
-	--flow-space: var(--flow0);
+.u-flow-space-400 {
+	--flow-space: var(--flow-400);
 }
 
-.u-flow-space1 {
-	--flow-space: var(--flow1);
+.u-flow-space-500 {
+	--flow-space: var(--flow-500);
 }
 
-.u-flow-space2 {
-	--flow-space: var(--flow2);
+.u-flow-space-600 {
+	--flow-space: var(--flow-600);
 }
 
-.u-flow-space3 {
-	--flow-space: var(--flow3);
+.u-flow-space-700 {
+	--flow-space: var(--flow-700);
 }
 
-.u-flow-space4 {
-	--flow-space: var(--flow4);
+.u-flow-space-800 {
+	--flow-space: var(--flow-800);
 }
 
-.u-flow-space5 {
-	--flow-space: var(--flow5);
+.u-flow-space-900 {
+	--flow-space: var(--flow-900);
 }
