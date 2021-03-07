@@ -23,3 +23,23 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+
+::selection {
+	background: var(--primary);
+	color: var(--white);
+}
+
+// :disabled {
+// }
+//
+// :focus {
+// }
+
+// ::-webkit-scrollbar {
+// }
+//
+// ::-webkit-scrollbar-button {
+// }
+//
+// ::-webkit-scrollbar-track {
+// }

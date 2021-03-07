@@ -1,37 +1,65 @@
 /* 
 -----------------------------------------------
-**	BRANDING COLORS AND UNIVERSAL VISUAL STYLES
+**	BRANDING COLORS AND UNIVERSAL VISUAL STYLING
 ----------------------------------------------- 
 */
 
 :root {
-	/*------------- base color system -------------*/
-	--primary: steelblue;
-	--primary-light: lightsteelblue ;
-	--primary-dark: darkslateblue;
-	--secondary: blanchedalmond;
-	--accent: darkkhaki;
-	--warning: palevioletred;
-	--error: crimson;
-	--alert: yellowgreen;
-	--action: chocolate;
-	--neutral: gray;
-	--neutral-light: gainsboro;
-	--neutral-dark: dimgrey;
-	--black: black;
-	--white: white;
+	/*------------- base color system using HSL for easy adjustments -------------*/
+	--primary-dark: hsl(207, 44%, 39%);
+	--primary: hsl(207, 44%, 49%);
+	--primary-light: hsl(207, 44%, 59%);
+	--secondary-dark: hsl(39, 100%, 40%);
+	--secondary: hsl(39, 100%, 50%);
+	--secondary-light: hsl(39, 100%, 60%);
+	--tertiary-dark: hsl(56, 38%, 48%);
+	--tertiary: hsl(56, 38%, 58%);
+	--tertiary-light: hsl(56, 38%, 68%);
 
-	/*------------- universal box shadows -------------*/
-	--shadow-color-light: var(--white);
-	--shadow-color-dark: rgba(0,0,0,0.3);
+	--black: hsl(0, 0%, 0%);
+	--neutral-100: hsl(0, 0%, 10%);
+	--neutral-200: hsl(0, 0%, 20%);
+	--neutral-300: hsl(0, 0%, 30%);
+	--neutral-400: hsl(0, 0%, 40%);
+	--neutral-500: hsl(0, 0%, 50%);
+	--neutral-600: hsl(0, 0%, 60%);
+	--neutral-700: hsl(0, 0%, 70%);
+	--neutral-800: hsl(0, 0%, 80%);
+	--neutral-900: hsl(0, 0%, 90%);
+	--white: hsl(0, 0%, 100%);
 
-	--shadow-small-y: 0px 2px 8px var(--shadow-color-dark);
-	--shadow-med-y: 0px 6px 12px var(--shadow-color-dark);
-	--shadow-big-y: 0px 12px 24px var(--shadow-color-dark);
-	--shadow-small-xy: 2px 2px 8px var(--shadow-color-dark);
-	--shadow-med-xy: 6px 6px 12px var(--shadow-color-dark);
-	--shadow-big-xy: 6px 12px 24px var(--shadow-color-dark);
-	--shadow-huge: -20px -20px 60px var(--shadow-color-light),
-												20px 20px 60px var(--shadow-color-dark);
+	--alert: hsl(80, 61%, 50%);
+	--error: hsl(348, 83%, 47%);
+	--info: hsl(195, 53%, 79%);
+	--success: hsl(120, 100%, 25%);
+	--warning: hsl(340, 57%, 64%);
 
+	/*------------- alpha transparencies -------------*/
+	--primary-alpha-100: hsla(207, 44%, 39%, 10%);
+	--primary-alpha-200: hsla(207, 44%, 39%, 20%);
+	--primary-alpha-300: hsla(207, 44%, 39%, 30%);
+	--primary-alpha-400: hsla(207, 44%, 39%, 40%);
+	--primary-alpha-500: hsla(207, 44%, 39%, 50%);
+	--primary-alpha-600: hsla(207, 44%, 39%, 60%);
+	--primary-alpha-700: hsla(207, 44%, 39%, 70%);
+	--primary-alpha-800: hsla(207, 44%, 39%, 80%);
+	--primary-alpha-900: hsla(207, 44%, 39%, 90%);
+	--secondary-alpha-100: hsla(39, 100%, 50%, 10%);
+	--secondary-alpha-200: hsla(39, 100%, 50%, 20%);
+	--secondary-alpha-300: hsla(39, 100%, 50%, 30%);
+	--secondary-alpha-400: hsla(39, 100%, 50%, 40%);
+	--secondary-alpha-500: hsla(39, 100%, 50%, 50%);
+	--secondary-alpha-600: hsla(39, 100%, 50%, 60%);
+	--secondary-alpha-700: hsla(39, 100%, 50%, 70%);
+	--secondary-alpha-800: hsla(39, 100%, 50%, 80%);
+	--secondary-alpha-900: hsla(39, 100%, 50%, 90%);
+	--tertiary-alpha-100: hsla(56, 38%, 58%, 10%);
+	--tertiary-alpha-200: hsla(56, 38%, 58%, 20%);
+	--tertiary-alpha-300: hsla(56, 38%, 58%, 30%);
+	--tertiary-alpha-400: hsla(56, 38%, 58%, 40%);
+	--tertiary-alpha-500: hsla(56, 38%, 58%, 50%);
+	--tertiary-alpha-600: hsla(56, 38%, 58%, 60%);
+	--tertiary-alpha-700: hsla(56, 38%, 58%, 70%);
+	--tertiary-alpha-800: hsla(56, 38%, 58%, 80%);
+	--tertiary-alpha-900: hsla(56, 38%, 58%, 90%);
 }

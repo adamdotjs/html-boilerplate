@@ -1,7 +1,7 @@
 /* Use this to horizontally nest various width elements with gap when wrapping.
    Change once gap support is better. */
 .o-cluster {
-	--cluster-gap: var(--flow-2);
+	--cluster-gap: var(--flow-400);
 }
 
 .o-cluster > * {
