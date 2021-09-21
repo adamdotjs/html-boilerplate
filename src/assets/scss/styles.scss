@@ -1,12 +1,13 @@
 /*! THIS FILE CREATED WITH SCSS -- DO NOT EDIT DIRECTLY! */
 
 @import '00-config/__config-index';
-@import '01-utilities/__utilities-index';
-@import '02-base/__base-index';
-@import '03-objects/__objects-index';
+@import '01-reset/__reset-index';
+@import '02-global/__global-index';
+@import '03-blocks/__blocks-index';
 @import '04-components/__components-index';
 @import '05-pages/__pages-index';
-@import '06-vendor/__vendor-index';
+@import '06-utilities/__utilities-index';
+@import '07-vendor/__vendor-index';
 
 
 /* 

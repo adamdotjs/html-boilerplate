@@ -1,0 +1,109 @@
+/* 
+-----------------------------------------------
+**	GLOBAL ELEMENTS
+----------------------------------------------- 
+*/
+
+html {
+  //set base to 10px for easier REM sizing
+  font-size: 62.5%;
+  word-break: break-word;
+  hyphens: none;
+}
+
+body {
+  // set body as flex to keep footer at bottom of viewport
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-primary);
+  font-size: var(--scale-400);
+  font-weight: var(--font-weight-copy);
+  color: var(--black);
+  background: var(--white);
+}
+
+footer {
+  margin-block-start: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+section {
+  position: relative;
+  padding-top: var(--scale-1000);
+  padding-bottom: var(--scale-1000);
+}
+
+/* 
+-----------------------------------------------
+**	TYPOGRAPHY RULES
+**	Reference config/scale.scss for type scale
+----------------------------------------------- 
+*/
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heading);
+  letter-spacing: -0.02em;
+  transition: font-size 0.2s linear;
+}
+
+h1 {
+  font-size: var(--scale-900);
+  max-width: var(--heading-measure-large);
+}
+
+h2 {
+  font-size: var(--scale-700);
+  max-width: var(--heading-measure-large);
+}
+
+h3 {
+  font-size: var(--scale-600);
+  max-width: var(--heading-measure-small);
+}
+
+h4 {
+  font-size: var(--scale-500);
+}
+
+h5 {
+  font-size: var(--scale-400);
+  font-weight: var(--font-weight-heading);
+}
+
+p,
+h5 {
+  max-width: var(--paragraph-measure);
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  max-width: fit-content;
+}

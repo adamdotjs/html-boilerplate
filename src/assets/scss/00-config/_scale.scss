@@ -6,29 +6,49 @@
 */
 
 :root {
-	/*------------- define ratio options -------------*/
-	--minor-second: 1.067;
-	--major-second: 1.125;
-	--minor-third: 1.2;
-	--major-third: 1.25;
-	--perfect-fourth: 1.333;
-	--augmented-fourth: 1.414;
-	--perfect-fifth: 1.5;
-	--golden-ratio: 1.618;
+  /*------------- define ratio options -------------*/
+  --minor-second: 1.067;
+  --major-second: 1.125;
+  --minor-third: 1.2;
+  --major-third: 1.25;
+  --perfect-fourth: 1.333;
+  --augmented-fourth: 1.414;
+  --perfect-fifth: 1.5;
+  --golden-ratio: 1.618;
 
-	/*------------- define scale -------------*/
-	--scale-ratio: var(--perfect-fourth); // base scale ratio
-	--scale-base: 1.6rem; // default font sizex
+  /*------------- set responsive viewport calculation -------------*/
+  --viewport-min: 320;
+  --viewport-max: 1440;
+  --viewport-base: 100vw;
+  --viewport-scale: calc(
+    (var(--viewport-base) - var(--viewport-min) / 16 * 1.6rem) /
+      (var(--viewport-max) - var(--viewport-min))
+  );
 
-	--size-000: calc(var(--size-050) / var(--scale-ratio));
-	--size-050: calc(var(--size-100) / var(--scale-ratio));
-	--size-100: calc(var(--size-200) / var(--scale-ratio));
-	--size-200: calc(var(--size-300) / var(--scale-ratio));
-	--size-300: calc(var(--size-400) / var(--scale-ratio));
-	--size-400: calc(var(--size-base) + 0.2vw);
-	--size-500: calc(var(--size-400) * var(--scale-ratio));
-	--size-600: calc(var(--size-500) * var(--scale-ratio));
-	--size-700: calc(var(--size-600) * var(--scale-ratio));
-	--size-800: calc(var(--size-700) * var(--scale-ratio));
-	--size-900: calc(var(--size-800) * var(--scale-ratio));
+  @media (min-width: calc(var(--viewport-max) * 1px)) {
+    --viewport-base: calc(var(--viewport-max) * 1px);
+  }
+
+  /*------------- define scale -------------*/
+  --scale-ratio: var(--major-third); // base scale ratio
+  --scale-base: 1.6rem; // default font sizex
+
+  @media (min-width: 1200px) {
+    --scale-ratio: var(--perfect-fourth);
+    --scale-base: 1.8rem;
+  }
+
+  --scale-50: calc(var(--scale-100) / var(--scale-ratio));
+  --scale-100: calc(var(--scale-200) / var(--scale-ratio));
+  --scale-200: calc(var(--scale-300) / var(--scale-ratio));
+  --scale-300: calc(var(--scale-400) / var(--scale-ratio));
+  --scale-400: var(--scale-base);
+  --scale-500: calc(var(--scale-400) * var(--scale-ratio));
+  --scale-600: calc(var(--scale-500) * var(--scale-ratio));
+  --scale-700: calc(var(--scale-600) * var(--scale-ratio));
+  --scale-800: calc(var(--scale-700) * var(--scale-ratio));
+  --scale-900: calc(var(--scale-800) * var(--scale-ratio));
+  --scale-1000: calc(var(--scale-900) * var(--scale-ratio));
+  --scale-1500: calc(var(--scale-1000) * var(--scale-ratio));
+  --scale-2000: calc(var(--scale-1500) * var(--scale-ratio));
 }

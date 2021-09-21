@@ -1,42 +1,42 @@
 .c-btn {
-	--background: var(--tertiary);
-	--text: var(--white);
+  --background: var(--quarternary);
+  --background-hover: var(--quarternary-dark);
+  --text: var(--black);
 
-	cursor: pointer;
-	display: inline-block;
-	border: none;
-	border-radius: var(--flow-200);
-	outline: none;
-	padding: calc(var(--flow-500) / 2) var(--flow-500);
-	background: var(--background);
-	color: var(--text);
-	text-decoration: none;
-	transition: all 200ms ease-in-out, transform 100ms ease;
-	will-change: transform;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: var(--background);
+  color: var(--text);
+  padding: calc(var(--flow-500) / 2) var(--flow-500);
+  transition: color 200ms ease-in-out;
 
-	&:focus {
-		box-shadow: inset 0px 0px 0px 4px var(--primary-dark);
-	}
+  &:focus {
+    box-shadow: inset 0px 0px 0px 4px var(--primary-dark);
+  }
 
-	&:hover {
-		--background: var(--tertiary-dark);
-		transform: translateY(-0.1em);
-	}
+  &:hover {
+    color: white;
 
-	&:active {
-		transform: scale(0.95);
-	}
+    &::after {
+      height: 100%;
+    }
+  }
 
-	&--sm {
-		font-size: var(--scale-1);
-	}
+  &:active {
+    transform: scale(0.95);
+  }
 
-	&--lg {
-		font-size: var(--scale1);
-	}
+  &--sm {
+    font-size: var(--scale-300);
+  }
 
-	&--white {
-		--background: var(--white);
-		--text: var(--tertiary-dark);
-	}
+  &--lg {
+    font-size: var(--scale-500);
+  }
+
+  &--white {
+    --background: var(--white);
+    --text: var(--tertiary-dark);
+  }
 }

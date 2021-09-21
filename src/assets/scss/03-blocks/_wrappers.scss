@@ -1,0 +1,18 @@
+// wrapper set to display: grid allows us to use full bleed utility classes that simply spans the grid instead of using hacky margins
+// and cuts down on the amount of markup needed.
+.b-wrapper {
+  --max-width: 1366px;
+
+  display: grid;
+  grid-template-columns:
+    [left-gutter] 1fr
+    [main] minmax(0, var(--max-width))
+    [right-gutter] 1fr;
+  gap: var(--scale-800) var(--grid-gap);
+  place-content: center;
+
+  // by default, set all grid children inside main content area
+  > * {
+    grid-column: main;
+  }
+}

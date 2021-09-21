@@ -1,10 +1,10 @@
 /* switcher class to auto-wrap columns without growing items beyond their siblings */
-.o-switcher {
+.b-switcher {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.o-switcher > * {
+.b-switcher > * {
 	flex-grow: 1;
 	flex-basis: calc((50rem - 100%) * 999);
 }
