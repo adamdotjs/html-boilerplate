@@ -1,0 +1,180 @@
+/* 
+-----------------------------------------------
+**  GLOBAL UTILITY CLASSES -- ADD TO MARKUP
+**  These are meant to do one thing to avoid adding unnecessary BEM classes
+----------------------------------------------- 
+*/
+
+
+// background colors
+.u-bg--primary-dark {
+	background-color: var(--primary-dark);
+}
+.u-bg--primary {
+	background-color: var(--primary);
+}
+.u-bg--primary-light {
+	background-color: var(--primary-light);
+}
+.u-bg--secondary-dark {
+	background-color: var(--secondary-dark);
+}
+.u-bg--secondary {
+	background-color: var(--secondary);
+}
+.u-bg--secondary-light {
+	background-color: var(--secondary-light);
+}
+.u-bg--tertiary-dark {
+	background-color: var(--tertiary-dark);
+}
+.u-bg--tertiary {
+	background-color: var(--tertiary);
+}
+.u-bg--tertiary-light {
+	background-color: var(--tertiary-light);
+}
+.u-bg--quarternary-dark {
+	background-color: var(--quarternary-dark);
+}
+.u-bg--quarternary {
+	background-color: var(--quarternary);
+}
+.u-bg--quarternary-light {
+	background-color: var(--quarternary-light);
+}
+.u-bg--black {
+	background-color: var(--black);
+}
+.u-bg--gray-100 {
+	background-color: var(--gray-100);
+}
+.u-bg--gray-200 {
+	background-color: var(--gray-200);
+}
+.u-bg--gray-300 {
+	background-color: var(--gray-300);
+}
+.u-bg--gray-400 {
+	background-color: var(--gray-400);
+}
+.u-bg--gray-500 {
+	background-color: var(--gray-500);
+}
+.u-bg--gray-600 {
+	background-color: var(--gray-600);
+}
+.u-bg--gray-700 {
+	background-color: var(--gray-700);
+}
+.u-bg--gray-800 {
+	background-color: var(--gray-800);
+}
+.u-bg--gray-900 {
+	background-color: var(--gray-900);
+}
+.u-bg--white {
+	background-color: var(--white);
+}
+.u-bg--alert {
+	background-color: var(--alert);
+}
+.u-bg--error {
+	background-color: var(--error);
+}
+.u-bg--info {
+	background-color: var(--info);
+}
+.u-bg--success {
+	background-color: var(--success);
+}
+.u-bg--warning {
+	background-color: var(--warning);
+}
+
+
+// text colors
+.u-color--primary-dark {
+	color: var(--primary-dark);
+}
+.u-color--primary {
+	color: var(--primary);
+}
+.u-color--primary-light {
+	color: var(--primary-light);
+}
+.u-color--secondary-dark {
+	color: var(--secondary-dark);
+}
+.u-color--secondary {
+	color: var(--secondary);
+}
+.u-color--secondary-light {
+	color: var(--secondary-light);
+}
+.u-color--tertiary-dark {
+	color: var(--tertiary-dark);
+}
+.u-color--tertiary {
+	color: var(--tertiary);
+}
+.u-color--tertiary-light {
+	color: var(--tertiary-light);
+}
+.u-color--quarternary-dark {
+	color: var(--quarternary-dark);
+}
+.u-color--quarternary {
+	color: var(--quarternary);
+}
+.u-color--quarternary-light {
+	color: var(--quarternary-light);
+}
+.u-color--black {
+	color: var(--black);
+}
+.u-color--gray-100 {
+	color: var(--gray-100);
+}
+.u-color--gray-200 {
+	color: var(--gray-200);
+}
+.u-color--gray-300 {
+	color: var(--gray-300);
+}
+.u-color--gray-400 {
+	color: var(--gray-400);
+}
+.u-color--gray-500 {
+	color: var(--gray-500);
+}
+.u-color--gray-600 {
+	color: var(--gray-600);
+}
+.u-color--gray-700 {
+	color: var(--gray-700);
+}
+.u-color--gray-800 {
+	color: var(--gray-800);
+}
+.u-color--gray-900 {
+	color: var(--gray-900);
+}
+.u-color--white {
+	color: var(--white);
+}
+.u-color--alert {
+	color: var(--alert);
+}
+.u-color--error {
+	color: var(--error);
+}
+.u-color--info {
+	color: var(--info);
+}
+.u-color--success {
+	color: var(--success);
+}
+.u-color--warning {
+	color: var(--warning);
+}

@@ -1,0 +1,45 @@
+
+// Font size
+.u-text-100 {
+	font-size: var(--scale-100);
+}
+.u-text-200 {
+	font-size: var(--scale-200);
+}
+.u-text-300 {
+	font-size: var(--scale-300);
+}
+.u-text-400 {
+	font-size: var(--scale-400);
+}
+.u-text-500 {
+	font-size: var(--scale-500);
+}
+.u-text-600 {
+	font-size: var(--scale-600);
+}
+.u-text-700 {
+	font-size: var(--scale-700);
+}
+.u-text-800 {
+	font-size: var(--scale-800);
+}
+.u-text-900 {
+	font-size: var(--scale-900);
+}
+.u-text-1000 {
+	font-size: var(--scale-1000);
+}
+
+// Text alignment
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
+}

@@ -1,0 +1,804 @@
+/* 
+-----------------------------------------------
+**  GRID WRAPPER UTILITIES
+**  These utilities are meant to be used on objects
+**  directly inside the grid-wrapper utility.
+----------------------------------------------- 
+*/
+
+/* objects using the following classes should be placed directly inside grid-wrapper */
+.unset--left {
+	grid-column: left-gutter / right-gutter;
+	margin-right: calc(var(--grid-gap) * -1);
+}
+
+.unset--right {
+	grid-column: main / -1;
+	margin-left: calc(var(--grid-gap) * -1);
+}
+
+.full-bleed {
+	grid-column: 1 / -1;
+}
+
+
+/* 
+-----------------------------------------------
+******  MAIN GRID SYSTEM UTILITIES ******
+**  By default the grid system uses a 12 column layout. 
+**  This can be redefined in the columns property inside the grids file.
+**  By default, all items will start in column 1 and span across the entire grid.
+**  Apply special placement using these utility classes. Recommend starting mobile first
+**  Breakpoint utilities exist for modifying layout for different screen sizes!
+----------------------------------------------- 
+*/
+
+/* column start definitions */
+.col-start--1 {
+	grid-column-start: 1;
+}
+.col-start--2 {
+	grid-column-start: 2;
+}
+.col-start--3 {
+	grid-column-start: 3;
+}
+.col-start--4 {
+	grid-column-start: 4;
+}
+.col-start--5 {
+	grid-column-start: 5;
+}
+.col-start--6 {
+	grid-column-start: 6;
+}
+.col-start--7 {
+	grid-column-start: 7;
+}
+.col-start--8 {
+	grid-column-start: 8;
+}
+.col-start--9 {
+	grid-column-start: 9;
+}
+.col-start--10 {
+	grid-column-start: 10;
+}
+.col-start--11 {
+	grid-column-start: 11;
+}
+.col-start--12 {
+	grid-column-start: 12;
+}
+
+/* column span definitions*/
+.col-span--1 {
+	grid-column-end: span 1;
+}
+.col-span--2 {
+	grid-column-end: span 2;
+}
+.col-span--3 {
+	grid-column-end: span 3;
+}
+.col-span--4 {
+	grid-column-end: span 4;
+}
+.col-span--5 {
+	grid-column-end: span 5;
+}
+.col-span--6 {
+	grid-column-end: span 6;
+}
+.col-span--7 {
+	grid-column-end: span 7;
+}
+.col-span--8 {
+	grid-column-end: span 8;
+}
+.col-span--9 {
+	grid-column-end: span 9;
+}
+.col-span--10 {
+	grid-column-end: span 10;
+}
+.col-span--11 {
+	grid-column-end: span 11;
+}
+.col-span--12 {
+	grid-column-end: span 12;
+}
+
+/* column definitions for tablet sized devices */
+@media (min-width: 649px) {
+	.col-start-m--1 {
+		grid-column-start: 1;
+	}
+	.col-start-m--2 {
+		grid-column-start: 2;
+	}
+	.col-start-m--3 {
+		grid-column-start: 3;
+	}
+	.col-start-m--4 {
+		grid-column-start: 4;
+	}
+	.col-start-m--5 {
+		grid-column-start: 5;
+	}
+	.col-start-m--6 {
+		grid-column-start: 6;
+	}
+	.col-start-m--7 {
+		grid-column-start: 7;
+	}
+	.col-start-m--8 {
+		grid-column-start: 8;
+	}
+	.col-start-m--9 {
+		grid-column-start: 9;
+	}
+	.col-start-m--10 {
+		grid-column-start: 10;
+	}
+	.col-start-m--11 {
+		grid-column-start: 11;
+	}
+	.col-start-m--12 {
+		grid-column-start: 12;
+	}
+
+	.col-span-m--1 {
+		grid-column-end: span 1;
+	}
+	.col-span-m--2 {
+		grid-column-end: span 2;
+	}
+	.col-span-m--3 {
+		grid-column-end: span 3;
+	}
+	.col-span-m--4 {
+		grid-column-end: span 4;
+	}
+	.col-span-m--5 {
+		grid-column-end: span 5;
+	}
+	.col-span-m--6 {
+		grid-column-end: span 6;
+	}
+	.col-span-m--7 {
+		grid-column-end: span 7;
+	}
+	.col-span-m--8 {
+		grid-column-end: span 8;
+	}
+	.col-span-m--9 {
+		grid-column-end: span 9;
+	}
+	.col-span-m--10 {
+		grid-column-end: span 10;
+	}
+	.col-span-m--11 {
+		grid-column-end: span 11;
+	}
+	.col-span-m--12 {
+		grid-column-end: span 12;
+	}
+}
+
+/* column definitions for small desktops */
+@media (min-width: 1025px) {
+	.col-start-l--1 {
+		grid-column-start: 1;
+	}
+	.col-start-l--2 {
+		grid-column-start: 2;
+	}
+	.col-start-l--3 {
+		grid-column-start: 3;
+	}
+	.col-start-l--4 {
+		grid-column-start: 4;
+	}
+	.col-start-l--5 {
+		grid-column-start: 5;
+	}
+	.col-start-l--6 {
+		grid-column-start: 6;
+	}
+	.col-start-l--7 {
+		grid-column-start: 7;
+	}
+	.col-start-l--8 {
+		grid-column-start: 8;
+	}
+	.col-start-l--9 {
+		grid-column-start: 9;
+	}
+	.col-start-l--10 {
+		grid-column-start: 10;
+	}
+	.col-start-l--11 {
+		grid-column-start: 11;
+	}
+	.col-start-l--12 {
+		grid-column-start: 12;
+	}
+
+	.col-span-l--1 {
+		grid-column-end: span 1;
+	}
+	.col-span-l--2 {
+		grid-column-end: span 2;
+	}
+	.col-span-l--3 {
+		grid-column-end: span 3;
+	}
+	.col-span-l--4 {
+		grid-column-end: span 4;
+	}
+	.col-span-l--5 {
+		grid-column-end: span 5;
+	}
+	.col-span-l--6 {
+		grid-column-end: span 6;
+	}
+	.col-span-l--7 {
+		grid-column-end: span 7;
+	}
+	.col-span-l--8 {
+		grid-column-end: span 8;
+	}
+	.col-span-l--9 {
+		grid-column-end: span 9;
+	}
+	.col-span-l--10 {
+		grid-column-end: span 10;
+	}
+	.col-span-l--11 {
+		grid-column-end: span 11;
+	}
+	.col-span-l--12 {
+		grid-column-end: span 12;
+	}
+}
+
+/* column definitions for large desktops */
+@media (min-width: 1400px) {
+	.col-start-xl--1 {
+		grid-column-start: 1;
+	}
+	.col-start-xl--2 {
+		grid-column-start: 2;
+	}
+	.col-start-xl--3 {
+		grid-column-start: 3;
+	}
+	.col-start-xl--4 {
+		grid-column-start: 4;
+	}
+	.col-start-xl--5 {
+		grid-column-start: 5;
+	}
+	.col-start-xl--6 {
+		grid-column-start: 6;
+	}
+	.col-start-xl--7 {
+		grid-column-start: 7;
+	}
+	.col-start-xl--8 {
+		grid-column-start: 8;
+	}
+	.col-start-xl--9 {
+		grid-column-start: 9;
+	}
+	.col-start-xl--10 {
+		grid-column-start: 10;
+	}
+	.col-start-xl--11 {
+		grid-column-start: 11;
+	}
+	.col-start-xl--12 {
+		grid-column-start: 12;
+	}
+
+	.col-span-xl--1 {
+		grid-column-end: span 1;
+	}
+	.col-span-xl--2 {
+		grid-column-end: span 2;
+	}
+	.col-span-xl--3 {
+		grid-column-end: span 3;
+	}
+	.col-span-xl--4 {
+		grid-column-end: span 4;
+	}
+	.col-span-xl--5 {
+		grid-column-end: span 5;
+	}
+	.col-span-xl--6 {
+		grid-column-end: span 6;
+	}
+	.col-span-xl--7 {
+		grid-column-end: span 7;
+	}
+	.col-span-xl--8 {
+		grid-column-end: span 8;
+	}
+	.col-span-xl--9 {
+		grid-column-end: span 9;
+	}
+	.col-span-xl--10 {
+		grid-column-end: span 10;
+	}
+	.col-span-xl--11 {
+		grid-column-end: span 11;
+	}
+	.col-span-xl--12 {
+		grid-column-end: span 12;
+	}
+}
+
+/* row start definitions */
+.row-start--1 {
+	grid-row-start: 1;
+}
+.row-start--2 {
+	grid-row-start: 2;
+}
+.row-start--3 {
+	grid-row-start: 3;
+}
+.row-start--4 {
+	grid-row-start: 4;
+}
+.row-start--5 {
+	grid-row-start: 5;
+}
+.row-start--6 {
+	grid-row-start: 6;
+}
+.row-start--7 {
+	grid-row-start: 7;
+}
+.row-start--8 {
+	grid-row-start: 8;
+}
+.row-start--9 {
+	grid-row-start: 9;
+}
+.row-start--10 {
+	grid-row-start: 10;
+}
+.row-start--11 {
+	grid-row-start: 11;
+}
+.row-start--12 {
+	grid-row-start: 12;
+}
+
+/* row span definitions */
+.row-span--1 {
+	grid-row-end: span 1;
+}
+.row-span--2 {
+	grid-row-end: span 2;
+}
+.row-span--3 {
+	grid-row-end: span 3;
+}
+.row-span--4 {
+	grid-row-end: span 4;
+}
+.row-span--5 {
+	grid-row-end: span 5;
+}
+.row-span--6 {
+	grid-row-end: span 6;
+}
+.row-span--7 {
+	grid-row-end: span 7;
+}
+.row-span--8 {
+	grid-row-end: span 8;
+}
+.row-span--9 {
+	grid-row-end: span 9;
+}
+.row-span--10 {
+	grid-row-end: span 10;
+}
+.row-span--11 {
+	grid-row-end: span 11;
+}
+.row-span--12 {
+	grid-row-end: span 12;
+}
+
+/* row definitions for tablet sized devices */
+@media (min-width: 649px) {
+	.row-start-m--1 {
+		grid-row-start: 1;
+	}
+	.row-start-m--2 {
+		grid-row-start: 2;
+	}
+	.row-start-m--3 {
+		grid-row-start: 3;
+	}
+	.row-start-m--4 {
+		grid-row-start: 4;
+	}
+	.row-start-m--5 {
+		grid-row-start: 5;
+	}
+	.row-start-m--6 {
+		grid-row-start: 6;
+	}
+	.row-start-m--7 {
+		grid-row-start: 7;
+	}
+	.row-start-m--8 {
+		grid-row-start: 8;
+	}
+	.row-start-m--9 {
+		grid-row-start: 9;
+	}
+	.row-start-m--10 {
+		grid-row-start: 10;
+	}
+	.row-start-m--11 {
+		grid-row-start: 11;
+	}
+	.row-start-m--12 {
+		grid-row-start: 12;
+	}
+
+	.row-span-m--1 {
+		grid-row-end: span 1;
+	}
+	.row-span-m--2 {
+		grid-row-end: span 2;
+	}
+	.row-span-m--3 {
+		grid-row-end: span 3;
+	}
+	.row-span-m--4 {
+		grid-row-end: span 4;
+	}
+	.row-span-m--5 {
+		grid-row-end: span 5;
+	}
+	.row-span-m--6 {
+		grid-row-end: span 6;
+	}
+	.row-span-m--7 {
+		grid-row-end: span 7;
+	}
+	.row-span-m--8 {
+		grid-row-end: span 8;
+	}
+	.row-span-m--9 {
+		grid-row-end: span 9;
+	}
+	.row-span-m--10 {
+		grid-row-end: span 10;
+	}
+	.row-span-m--11 {
+		grid-row-end: span 11;
+	}
+	.row-span-m--12 {
+		grid-row-end: span 12;
+	}
+}
+
+/* column definitions for small desktops */
+@media (min-width: 1025px) {
+	.row-start-l--1 {
+		grid-row-start: 1;
+	}
+	.row-start-l--2 {
+		grid-row-start: 2;
+	}
+	.row-start-l--3 {
+		grid-row-start: 3;
+	}
+	.row-start-l--4 {
+		grid-row-start: 4;
+	}
+	.row-start-l--5 {
+		grid-row-start: 5;
+	}
+	.row-start-l--6 {
+		grid-row-start: 6;
+	}
+	.row-start-l--7 {
+		grid-row-start: 7;
+	}
+	.row-start-l--8 {
+		grid-row-start: 8;
+	}
+	.row-start-l--9 {
+		grid-row-start: 9;
+	}
+	.row-start-l--10 {
+		grid-row-start: 10;
+	}
+	.row-start-l--11 {
+		grid-row-start: 11;
+	}
+	.row-start-l--12 {
+		grid-row-start: 12;
+	}
+	.row-span-l--1 {
+		grid-row-end: span 1;
+	}
+	.row-span-l--2 {
+		grid-row-end: span 2;
+	}
+	.row-span-l--3 {
+		grid-row-end: span 3;
+	}
+	.row-span-l--4 {
+		grid-row-end: span 4;
+	}
+	.row-span-l--5 {
+		grid-row-end: span 5;
+	}
+	.row-span-l--6 {
+		grid-row-end: span 6;
+	}
+	.row-span-l--7 {
+		grid-row-end: span 7;
+	}
+	.row-span-l--8 {
+		grid-row-end: span 8;
+	}
+	.row-span-l--9 {
+		grid-row-end: span 9;
+	}
+	.row-span-l--10 {
+		grid-row-end: span 10;
+	}
+	.row-span-l--11 {
+		grid-row-end: span 11;
+	}
+	.row-span-l--12 {
+		grid-row-end: span 12;
+	}
+}
+
+/* column definitions for large desktops */
+@media (min-width: 1440px) {
+	.row-start-l--1 {
+		grid-row-start: 1;
+	}
+	.row-start-l--2 {
+		grid-row-start: 2;
+	}
+	.row-start-l--3 {
+		grid-row-start: 3;
+	}
+	.row-start-l--4 {
+		grid-row-start: 4;
+	}
+	.row-start-l--5 {
+		grid-row-start: 5;
+	}
+	.row-start-l--6 {
+		grid-row-start: 6;
+	}
+	.row-start-l--7 {
+		grid-row-start: 7;
+	}
+	.row-start-l--8 {
+		grid-row-start: 8;
+	}
+	.row-start-l--9 {
+		grid-row-start: 9;
+	}
+	.row-start-l--10 {
+		grid-row-start: 10;
+	}
+	.row-start-l--11 {
+		grid-row-start: 11;
+	}
+	.row-start-l--12 {
+		grid-row-start: 12;
+	}
+	.row-span-l--1 {
+		grid-row-end: span 1;
+	}
+	.row-span-l--2 {
+		grid-row-end: span 2;
+	}
+	.row-span-l--3 {
+		grid-row-end: span 3;
+	}
+	.row-span-l--4 {
+		grid-row-end: span 4;
+	}
+	.row-span-l--5 {
+		grid-row-end: span 5;
+	}
+	.row-span-l--6 {
+		grid-row-end: span 6;
+	}
+	.row-span-l--7 {
+		grid-row-end: span 7;
+	}
+	.row-span-l--8 {
+		grid-row-end: span 8;
+	}
+	.row-span-l--9 {
+		grid-row-end: span 9;
+	}
+	.row-span-l--10 {
+		grid-row-end: span 10;
+	}
+	.row-span-l--11 {
+		grid-row-end: span 11;
+	}
+	.row-span-l--12 {
+		grid-row-end: span 12;
+	}
+}
+
+/* order definitions */
+.order--1 {
+	order: 1;
+}
+.order--2 {
+	order: 2;
+}
+.order--3 {
+	order: 3;
+}
+.order--4 {
+	order: 4;
+}
+.order--5 {
+	order: 5;
+}
+.order--6 {
+	order: 6;
+}
+.order--7 {
+	order: 7;
+}
+.order--8 {
+	order: 8;
+}
+.order--9 {
+	order: 9;
+}
+.order--10 {
+	order: 10;
+}
+.order--11 {
+	order: 11;
+}
+.order--12 {
+	order: 12;
+}
+
+/* order definitions for tablet sized devices */
+@media (min-width: 649px) {
+	.order-m--1 {
+		order: 1;
+	}
+	.order-m--2 {
+		order: 2;
+	}
+	.order-m--3 {
+		order: 3;
+	}
+	.order-m--4 {
+		order: 4;
+	}
+	.order-m--5 {
+		order: 5;
+	}
+	.order-m--6 {
+		order: 6;
+	}
+	.order-m--7 {
+		order: 7;
+	}
+	.order-m--8 {
+		order: 8;
+	}
+	.order-m--9 {
+		order: 9;
+	}
+	.order-m--10 {
+		order: 10;
+	}
+	.order-m--11 {
+		order: 11;
+	}
+	.order-m--12 {
+		order: 12;
+	}
+}
+
+/* order definitions for small desktops */
+@media (min-width: 1025px) {
+	.order-l--1 {
+		order: 1;
+	}
+	.order-l--2 {
+		order: 2;
+	}
+	.order-l--3 {
+		order: 3;
+	}
+	.order-l--4 {
+		order: 4;
+	}
+	.order-l--5 {
+		order: 5;
+	}
+	.order-l--6 {
+		order: 6;
+	}
+	.order-l--7 {
+		order: 7;
+	}
+	.order-l--8 {
+		order: 8;
+	}
+	.order-l--9 {
+		order: 9;
+	}
+	.order-l--10 {
+		order: 10;
+	}
+	.order-l--11 {
+		order: 11;
+	}
+	.order-l--12 {
+		order: 12;
+	}
+}
+
+/* order definitions for large desktops */
+@media (min-width: 1400px) {
+	.order-xl--1 {
+		order: 1;
+	}
+	.order-xl--2 {
+		order: 2;
+	}
+	.order-xl--3 {
+		order: 3;
+	}
+	.order-xl--4 {
+		order: 4;
+	}
+	.order-xl--5 {
+		order: 5;
+	}
+	.order-xl--6 {
+		order: 6;
+	}
+	.order-xl--7 {
+		order: 7;
+	}
+	.order-xl--8 {
+		order: 8;
+	}
+	.order-xl--9 {
+		order: 9;
+	}
+	.order-xl--10 {
+		order: 10;
+	}
+	.order-xl--11 {
+		order: 11;
+	}
+	.order-xl--12 {
+		order: 12;
+	}
+}

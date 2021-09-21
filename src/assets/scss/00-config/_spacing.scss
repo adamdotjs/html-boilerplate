@@ -9,8 +9,7 @@
 	--flow-base: 1em; // default font size
 	--flow-scale: var(--scale-ratio);
 
-	--flow-000: calc(var(--flow-050) / var(--flow-scale));
-	--flow-050: calc(var(--flow-100) / var(--flow-scale));
+	--flow-50: calc(var(--flow-100) / var(--flow-scale));
 	--flow-100: calc(var(--flow-200) / var(--flow-scale));
 	--flow-200: calc(var(--flow-300) / var(--flow-scale));
 	--flow-300: calc(var(--flow-400) / var(--flow-scale));

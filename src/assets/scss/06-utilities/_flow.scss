@@ -11,7 +11,7 @@
 }
 
 .u-flow > * + * {
-	margin-top: var(--flow-space);
+	margin-block-start: var(--flow-space);
 }
 
 /* utility classes to add to markup on a per item basis to escape the default amount */
@@ -19,46 +19,42 @@
 	--flow-space: 0;
 }
 
-.u-flow-space-000 {
-	--flow-space: var(--flow-000);
+.u-flow--50 {
+	--flow-space: var(--flow-50);
 }
 
-.u-flow-space-050 {
-	--flow-space: var(--flow-050);
-}
-
-.u-flow-space-100 {
+.u-flow--100 {
 	--flow-space: var(--flow-100);
 }
 
-.u-flow-space-200 {
+.u-flow--200 {
 	--flow-space: var(--flow-200);
 }
 
-.u-flow-space-300 {
+.u-flow--300 {
 	--flow-space: var(--flow-200);
 }
 
-.u-flow-space-400 {
+.u-flow--400 {
 	--flow-space: var(--flow-400);
 }
 
-.u-flow-space-500 {
+.u-flow--500 {
 	--flow-space: var(--flow-500);
 }
 
-.u-flow-space-600 {
+.u-flow--600 {
 	--flow-space: var(--flow-600);
 }
 
-.u-flow-space-700 {
+.u-flow--700 {
 	--flow-space: var(--flow-700);
 }
 
-.u-flow-space-800 {
+.u-flow--800 {
 	--flow-space: var(--flow-800);
 }
 
-.u-flow-space-900 {
+.u-flow--900 {
 	--flow-space: var(--flow-900);
 }

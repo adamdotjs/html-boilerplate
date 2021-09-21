@@ -5,61 +5,104 @@
 */
 
 :root {
-	/*------------- base color system using HSL for easy adjustments -------------*/
-	--primary-dark: hsl(207, 44%, 39%);
-	--primary: hsl(207, 44%, 49%);
-	--primary-light: hsl(207, 44%, 59%);
-	--secondary-dark: hsl(39, 100%, 40%);
-	--secondary: hsl(39, 100%, 50%);
-	--secondary-light: hsl(39, 100%, 60%);
-	--tertiary-dark: hsl(56, 38%, 48%);
-	--tertiary: hsl(56, 38%, 58%);
-	--tertiary-light: hsl(56, 38%, 68%);
+  // Define base HSL values.
+  // Separate base and lightness variables allow for simple updating across the color system instead of having to manually change everything
+  --primary-base: 205, 100%;
+  --primary-lightness: 37%;
+  --secondary-base: 219, 31%;
+  --secondary-lightness: 32%;
+  --tertiary-base: 42, 16%;
+  --tertiary-lightness: 87%;
+  --quarternary-base: 35, 100%;
+  --quarternary-lightness: 62%;
 
-	--black: hsl(0, 0%, 0%);
-	--neutral-100: hsl(0, 0%, 10%);
-	--neutral-200: hsl(0, 0%, 20%);
-	--neutral-300: hsl(0, 0%, 30%);
-	--neutral-400: hsl(0, 0%, 40%);
-	--neutral-500: hsl(0, 0%, 50%);
-	--neutral-600: hsl(0, 0%, 60%);
-	--neutral-700: hsl(0, 0%, 70%);
-	--neutral-800: hsl(0, 0%, 80%);
-	--neutral-900: hsl(0, 0%, 90%);
-	--white: hsl(0, 0%, 100%);
+  /*------------- main color system - use these variables in code -------------*/
+  --primary-dark: hsl(var(--primary-base), calc(var(--primary-lightness) - 10%));
+  --primary: hsl(var(--primary-base), var(--primary-lightness));
+  --primary-light: hsl(var(--primary-base), calc(var(--primary-lightness) + 10%));
+  --secondary-dark: hsl(var(--secondary-base), calc(var(--secondary-lightness) - 10%));
+  --secondary: hsl(var(--secondary-base), var(--secondary-lightness));
+  --secondary-light: hsl(var(--secondary-base), calc(var(--secondary-lightness) + 10%));
+  --tertiary-dark: hsl(var(--tertiary-base), calc(var(--tertiary-lightness) - 10%));
+  --tertiary: hsl(var(--tertiary-base), var(--tertiary-lightness));
+  --tertiary-light: hsl(var(--tertiary-base), calc(var(--tertiary-lightness) + 10%));
+  --quarternary-dark: hsl(var(--quarternary-base), calc(var(--quarternary-lightness) - 10%));
+  --quarternary: hsl(var(--quarternary-base), var(--quarternary-lightness));
+  --quarternary-light: hsl(var(--quarternary-base), calc(var(--quarternary-lightness) + 10%));
 
-	--alert: hsl(80, 61%, 50%);
-	--error: hsl(348, 83%, 47%);
-	--info: hsl(195, 53%, 79%);
-	--success: hsl(120, 100%, 25%);
-	--warning: hsl(340, 57%, 64%);
+  --black: hsl(210, 10%, 5%);
+  --gray-100: hsl(210, 10%, 10%);
+  --gray-200: hsl(210, 10%, 20%);
+  --gray-300: hsl(210, 10%, 30%);
+  --gray-400: hsl(210, 10%, 40%);
+  --gray-500: hsl(210, 10%, 50%);
+  --gray-600: hsl(210, 10%, 60%);
+  --gray-700: hsl(210, 10%, 70%);
+  --gray-800: hsl(210, 10%, 80%);
+  --gray-900: hsl(210, 10%, 90%);
+  --white: hsl(210, 10%, 100%);
 
-	/*------------- alpha transparencies -------------*/
-	--primary-alpha-100: hsla(207, 44%, 39%, 10%);
-	--primary-alpha-200: hsla(207, 44%, 39%, 20%);
-	--primary-alpha-300: hsla(207, 44%, 39%, 30%);
-	--primary-alpha-400: hsla(207, 44%, 39%, 40%);
-	--primary-alpha-500: hsla(207, 44%, 39%, 50%);
-	--primary-alpha-600: hsla(207, 44%, 39%, 60%);
-	--primary-alpha-700: hsla(207, 44%, 39%, 70%);
-	--primary-alpha-800: hsla(207, 44%, 39%, 80%);
-	--primary-alpha-900: hsla(207, 44%, 39%, 90%);
-	--secondary-alpha-100: hsla(39, 100%, 50%, 10%);
-	--secondary-alpha-200: hsla(39, 100%, 50%, 20%);
-	--secondary-alpha-300: hsla(39, 100%, 50%, 30%);
-	--secondary-alpha-400: hsla(39, 100%, 50%, 40%);
-	--secondary-alpha-500: hsla(39, 100%, 50%, 50%);
-	--secondary-alpha-600: hsla(39, 100%, 50%, 60%);
-	--secondary-alpha-700: hsla(39, 100%, 50%, 70%);
-	--secondary-alpha-800: hsla(39, 100%, 50%, 80%);
-	--secondary-alpha-900: hsla(39, 100%, 50%, 90%);
-	--tertiary-alpha-100: hsla(56, 38%, 58%, 10%);
-	--tertiary-alpha-200: hsla(56, 38%, 58%, 20%);
-	--tertiary-alpha-300: hsla(56, 38%, 58%, 30%);
-	--tertiary-alpha-400: hsla(56, 38%, 58%, 40%);
-	--tertiary-alpha-500: hsla(56, 38%, 58%, 50%);
-	--tertiary-alpha-600: hsla(56, 38%, 58%, 60%);
-	--tertiary-alpha-700: hsla(56, 38%, 58%, 70%);
-	--tertiary-alpha-800: hsla(56, 38%, 58%, 80%);
-	--tertiary-alpha-900: hsla(56, 38%, 58%, 90%);
+  --alert: hsl(80, 61%, 50%);
+  --error: hsl(3, 89%, 57%);
+  --info: hsl(195, 53%, 79%);
+  --success: hsl(120, 100%, 25%);
+  --warning: hsl(340, 57%, 64%);
+
+  /*------------- alpha transparencies -------------*/
+  --primary-a100: hsla(var(--primary-base), var(--primary-lightness), 10%);
+  --primary-a200: hsla(var(--primary-base), var(--primary-lightness), 20%);
+  --primary-a300: hsla(var(--primary-base), var(--primary-lightness), 30%);
+  --primary-a400: hsla(var(--primary-base), var(--primary-lightness), 40%);
+  --primary-a500: hsla(var(--primary-base), var(--primary-lightness), 50%);
+  --primary-a600: hsla(var(--primary-base), var(--primary-lightness), 60%);
+  --primary-a700: hsla(var(--primary-base), var(--primary-lightness), 70%);
+  --primary-a800: hsla(var(--primary-base), var(--primary-lightness), 80%);
+  --primary-a900: hsla(var(--primary-base), var(--primary-lightness), 90%);
+  --secondary-a100: hsla(var(--secondary-base), var(--secondary-lightness), 10%);
+  --secondary-a200: hsla(var(--secondary-base), var(--secondary-lightness), 20%);
+  --secondary-a300: hsla(var(--secondary-base), var(--secondary-lightness), 30%);
+  --secondary-a400: hsla(var(--secondary-base), var(--secondary-lightness), 40%);
+  --secondary-a500: hsla(var(--secondary-base), var(--secondary-lightness), 50%);
+  --secondary-a600: hsla(var(--secondary-base), var(--secondary-lightness), 60%);
+  --secondary-a700: hsla(var(--secondary-base), var(--secondary-lightness), 70%);
+  --secondary-a800: hsla(var(--secondary-base), var(--secondary-lightness), 80%);
+  --secondary-a900: hsla(var(--secondary-base), var(--secondary-lightness), 90%);
+  --tertiary-a100: hsla(var(--tertiary-base), var(--tertiary-lightness), 10%);
+  --tertiary-a200: hsla(var(--tertiary-base), var(--tertiary-lightness), 20%);
+  --tertiary-a300: hsla(var(--tertiary-base), var(--tertiary-lightness), 30%);
+  --tertiary-a400: hsla(var(--tertiary-base), var(--tertiary-lightness), 40%);
+  --tertiary-a500: hsla(var(--tertiary-base), var(--tertiary-lightness), 50%);
+  --tertiary-a600: hsla(var(--tertiary-base), var(--tertiary-lightness), 60%);
+  --tertiary-a700: hsla(var(--tertiary-base), var(--tertiary-lightness), 70%);
+  --tertiary-a800: hsla(var(--tertiary-base), var(--tertiary-lightness), 80%);
+  --tertiary-a900: hsla(var(--tertiary-base), var(--tertiary-lightness), 90%);
+  --quarternary-a100: hsla(var(--quarternary-base), var(--quarternary-lightness), 10%);
+  --quarternary-a200: hsla(var(--quarternary-base), var(--quarternary-lightness), 20%);
+  --quarternary-a300: hsla(var(--quarternary-base), var(--quarternary-lightness), 30%);
+  --quarternary-a400: hsla(var(--quarternary-base), var(--quarternary-lightness), 40%);
+  --quarternary-a500: hsla(var(--quarternary-base), var(--quarternary-lightness), 50%);
+  --quarternary-a600: hsla(var(--quarternary-base), var(--quarternary-lightness), 60%);
+  --quarternary-a700: hsla(var(--quarternary-base), var(--quarternary-lightness), 70%);
+  --quarternary-a800: hsla(var(--quarternary-base), var(--quarternary-lightness), 80%);
+  --quarternary-a900: hsla(var(--quarternary-base), var(--quarternary-lightness), 90%);
+  --gray-a100: hsla(var(--black), 10%);
+  --gray-a200: hsla(var(--black), 20%);
+  --gray-a300: hsla(var(--black), 30%);
+  --gray-a400: hsla(var(--black), 40%);
+  --gray-a500: hsla(var(--black), 50%);
+  --gray-a600: hsla(var(--black), 60%);
+  --gray-a700: hsla(var(--black), 70%);
+  --gray-a800: hsla(var(--black), 80%);
+  --gray-a900: hsla(var(--black), 90%);
+
+  /*------------- box shadows -------------*/
+  --shadow-100: 1px 1px 2px var(--gray-a100);
+  --shadow-200: 2px 2px 4px var(--gray-a100);
+  --shadow-300: 4px 4px 8px var(--gray-a100);
+  --shadow-400: 8px 8px 12px var(--gray-a100);
+  --shadow-500: 12px 12px 16px var(--gray-a100);
+  --shadow-600: 16px 16px 24px var(--gray-a100);
+  --shadow-700: 24px 24px 32px var(--gray-a100);
+  --shadow-800: 32px 32px 48px var(--gray-a100);
+  --shadow-900: 48px 48px 60px var(--gray-a100);
 }

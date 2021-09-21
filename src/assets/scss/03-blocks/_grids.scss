@@ -1,0 +1,26 @@
+:root {
+	--grid-gap: var(--scale-500);
+}
+
+.b-grid {
+	--columns: 12;
+	
+	display: grid;
+	grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+	gap: var(--grid-gap);
+	width: 100%;
+	
+	// by default, set all grid children to flow the full width of the grid
+	> * {
+		grid-column-end: span 12;
+	}
+}
+
+.b-grid--auto-fit {
+	--auto-grid-min: 30rem;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(var(--auto-grid-min), 1fr));
+	gap: var(--grid-gap);
+	padding: 0;
+}

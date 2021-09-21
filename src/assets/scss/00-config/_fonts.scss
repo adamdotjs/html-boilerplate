@@ -1,0 +1,16 @@
+/*------------- global font variables -------------*/
+:root {
+  // default font families
+  --font-heading: 'Inter', sans-serif;
+  --font-primary: sans-serif;
+
+  // set max character widths for readability
+  --heading-measure-wide: 25ch;
+  --heading-measure-short: 30ch;
+  --paragraph-measure: 65ch;
+
+  // define font weights
+  --font-weight-copy: 400;
+  --font-weight-heading: 700;
+  --font-weight-bold: 900;
+}
